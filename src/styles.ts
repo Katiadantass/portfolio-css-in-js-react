@@ -14,17 +14,13 @@ const EstiloGlobal = createGlobalStyle`
   body {
     font-family: 'Inter', sans-serif;
     padding-top: 80px;
+    padding-bottom: 80px;
     background: #f5f5f5;
     color: #222;
 
     @media (max-width: 768px) {
       padding-top: 16px;
     }
-  }
-
-  img {
-    max-width: 100%;
-    display: block;
   }
 `
 

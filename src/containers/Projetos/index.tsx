@@ -15,6 +15,10 @@ const Projetos: React.FC = () => (
       <li><Projeto /></li>
       <li><Projeto /></li>
       <li><Projeto /></li>
+      <li><Projeto /></li>
+      <li><Projeto /></li>
+      <li><Projeto /></li>
+      <li><Projeto /></li>
     </Lista>
   </section>
 )
