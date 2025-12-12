@@ -6,7 +6,10 @@ type PProps = {
 
 export const P = styled.p<PProps>`
   font-size: 14px;
-  color: ${(props) => (props.tipo === 'principal' ? '#282a35' : '#949494')};
+  color: ${(props) =>
+    props.tipo === 'principal'
+      ? (props.theme as any).corPrincipal
+      : (props.theme as any).corSecundaria};
   line-height: 22px;
 `
 

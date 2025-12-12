@@ -4,7 +4,11 @@ import Titulo from '../../components/Titulo'
 
 import { Descricao, BotaoTema, SidebarContainer } from './styles'
 
-const Sidebar: React.FC = () => (
+type Props = {
+  trocaTema: () => void
+}
+
+const Sidebar: React.FC<Props> = (props) => (
   <aside>
     <SidebarContainer>
       <Avatar />
@@ -18,7 +22,7 @@ const Sidebar: React.FC = () => (
         Desenvolvedora FullStack Python
       </Descricao>
 
-      <BotaoTema>Trocar tema</BotaoTema>
+      <BotaoTema onClick={props.trocaTema}>Trocar tema</BotaoTema>
     </SidebarContainer>
   </aside>
 )

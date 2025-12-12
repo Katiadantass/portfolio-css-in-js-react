@@ -15,8 +15,7 @@ const EstiloGlobal = createGlobalStyle`
     font-family: 'Inter', sans-serif;
     padding-top: 80px;
     padding-bottom: 80px;
-    background: #f5f5f5;
-    color: #222;
+    background: ${(props) => props.theme.corDeFundo};
 
     @media (max-width: 768px) {
       padding-top: 16px;
